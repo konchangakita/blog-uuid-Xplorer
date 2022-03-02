@@ -7,6 +7,8 @@ import json
 from base64 import b64encode
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+from datetime import datetime
+
 
 
 class NutanixAPI():
@@ -16,7 +18,7 @@ class NutanixAPI():
         payload = '{"kind":"vm", "length":256}'
 
         try:
-            response = requests.request('post', request_url, data=payload, headers=headers, verify=False, timeout=3.5)
+            response = requests.request('post', request_url, data=payload, headers=headers, verify=False, timeout=4)
         except requests.exceptions.ConnectTimeout:
             response = "Timeout shimasita"
 
@@ -48,3 +50,56 @@ class NutanixAPI():
 class ElasticAPI():
     def __init__(self, es_server):
         self.es = Elasticsearch(es_server)
+
+    # check index and create alias
+    def check_indices(self, index_name):
+        es = self.es
+        indices = es.cat.indices(index='*', h='index').splitlines()
+        if index_name not in indices:
+            es.indices.create(index=index_name)
+
+            alias = 'search_uuid'
+            es.indices.update_aliases(body={
+                'actions' : [{ 'add':
+                    { 'index': index_name, 'alias': alias }
+            }]
+        })
+
+    # put the data from Prism(Element) API to Elasticsearch
+    def put_rest_pe(self, r_json, timestamp, cluster_name, cluster_uuid, index_name):
+        es = self.es
+        index_name = index_name
+        self.check_indices(index_name)
+
+        actions = []
+        if index_name != 'share_details':
+            for entity in r_json['entities']:
+                entity['timestamp'] = timestamp
+                entity['cluster_name'] = cluster_name
+                entity['cluster_uuid'] = cluster_uuid
+                actions.append({'_index':index_name, '_source':entity})
+        else:
+            for entity in r_json:
+                entity['timestamp'] = timestamp
+                entity['cluster_name'] = cluster_name
+                entity['cluster_uuid'] = cluster_uuid
+                actions.append({'_index':index_name, '_source':entity})
+
+        reaction = helpers.bulk(es, actions)
+        return reaction[0]
+
+    def input_data(self, res_list):
+        timestamp = datetime.utcnow()
+        input_size = {}
+
+        # vms
+        vms_json = res_list['vms'].json()
+        cluster_name = vms_json['entities'][0]['spec']['cluster_reference']['name']
+        cluster_uuid = vms_json['entities'][0]['spec']['cluster_reference']['uuid']
+        input_size['vms'] = self.put_rest_pe(vms_json, timestamp, cluster_name, cluster_uuid, index_name='vms')
+
+        # volume_group
+        volume_groups_json = res_list['volume_groups'].json()
+        input_size['volume_groups'] = self.put_rest_pe(volume_groups_json, timestamp, cluster_name, cluster_uuid, index_name='volume_groups')
+
+        return cluster_name, input_size

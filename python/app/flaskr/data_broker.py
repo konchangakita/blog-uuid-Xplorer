@@ -8,8 +8,23 @@ from base64 import b64encode
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 from datetime import datetime
+from datetime import timezone, timedelta
+
+import re
 
 
+# UTC to JST
+def change_timeslot(timeslot):
+    timeslot_dict = []
+    for oneslot in timeslot:
+        _utc = re.split('[T.]', oneslot)
+        utc = _utc[0] + " " + _utc[1]
+        utc_time = datetime.strptime(utc, '%Y-%m-%d %H:%M:%S')
+        _jst_time = utc_time.astimezone(timezone(timedelta(hours=+9)))
+        jst_time = datetime.strftime(_jst_time, '%Y-%m-%d %H:%M:%S')
+
+        timeslot_dict.append({'utc_time':oneslot, 'local_time':jst_time})
+    return timeslot_dict
 
 class NutanixAPI():
     def get_vms(self, prism_ip, headers):
@@ -103,3 +118,37 @@ class ElasticAPI():
         input_size['volume_groups'] = self.put_rest_pe(volume_groups_json, timestamp, cluster_name, cluster_uuid, index_name='volume_groups')
 
         return cluster_name, input_size
+
+
+    def get_timeslot(self, cluster_name):
+        es = self.es
+        index_name = 'vms'
+
+        query = {
+            "function_score" : {
+                "query": {"match": { 'status.cluster_reference.name' : cluster_name}}
+            }
+        }
+        aggs =  {
+            "group_by_timestamp": {"terms": { "field" : "timestamp", "size" : 1000}}
+        }
+        res = es.search(index=index_name, query=query, aggs=aggs)
+        _timeslot = [slot['key_as_string'] for slot in res['aggregations']['group_by_timestamp']['buckets']]
+        timeslot = sorted(_timeslot, reverse=True)
+        timeslot_dict = change_timeslot(timeslot)
+        return timeslot_dict
+
+    def get_document_all(self, timestamp, cluster_name):
+        es = self.es
+        alias = 'search_uuid'
+
+        query =  {
+            "function_score" : {
+                "query": { "bool": { "must": [
+                    {"match": { "timestamp" : timestamp}},
+                    {"match": { "cluster_name" : cluster_name}}
+                ]}}
+            }
+        }
+        res = es.search(index=alias, query=query, size=512)
+        return [ s for s in res['hits']['hits'] ]

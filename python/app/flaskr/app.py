@@ -20,8 +20,41 @@ prism_ip = '10.149.20.41'
 prism_user = 'admin'
 prism_pass = 'Nutanix/4u123!'
 #prism_pass = 'nutanix/4u'
+cluster_name = 'POC20'
 
 title =  'Welcome to UUID X-plorer'
+
+def connect_cluster():
+    # get from Nutanix cluster
+    res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
+    if hasattr(res_list['vms'], 'status_code'):
+        if res_list['vms'].status_code == 200:
+            # input to Elasticsearch
+            cluster_name, input_size = es.input_data(res_list)
+            time.sleep(1)
+            content = "データ取得完了"
+        else:
+            r_json = res_list['vms'].json()
+            content = r_json['message_list'][0]['message']
+    else: # timeout
+        content = 'timeout (wrong IP?)'
+
+    return content
+
+def get_dataset():
+    timeslot = es.get_timeslot(cluster_name)
+    timestamp_utcstr = timeslot[0]['utc_time']
+    hits = es.get_document_all(timestamp_utcstr, cluster_name)
+
+    doc = {}
+    for _hit in hits:
+        index_name = _hit['_index']
+        if not index_name in doc:
+            doc[index_name] = []
+
+        doc[index_name].append(_hit['_source'])
+
+    return doc
 
 @app.route('/')
 def index():
@@ -31,23 +64,10 @@ def index():
 @app.route('/', methods=['POST'])
 def index_post():
     content = ''
-
     if request.form.get('connect'):
-        # get from Nutanix cluster
-        res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
-        if hasattr(res_list['vms'], 'status_code'):
-            if res_list['vms'].status_code == 200:
-                # input to Elasticsearch
-                cluster_name, input_size = es.input_data(res_list)
-                time.sleep(1)
-                content = "データ取得完了"
-            else:
-                r_json = res_list['vms'].json()
-                content = r_json['message_list'][0]['message']
-        else: # timeout
-            content = 'timeout (wrong IP?)'
+        content = connect_cluster()
     elif request.form.get('correct'):
-        content = 'correct'
+        content = get_dataset()
 
     return render_template('index.html', \
         content = content, \

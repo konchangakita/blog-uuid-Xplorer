@@ -28,8 +28,18 @@
         <input type="hidden" name="correct" value="true">
         <input type="submit" value="表示" />
       </form>
-      <div>
-        {{ content }}
+      <div class="list">
+        {% if content %}
+          {% if content.vms %}
+            {% for vm in content.vms %}
+              <div>
+                {{vm.spec.name}}: {{vm.metadata.uuid}}
+              </div>
+            {% endfor %}
+          {% else %}
+            {{content}}
+          {% endif %}
+        {% endif %}
       </div>
     </div>
 

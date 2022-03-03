@@ -30,19 +30,29 @@ def index():
 
 @app.route('/', methods=['POST'])
 def index_post():
-    # get from Nutanix cluster
-    res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
-    print(res_list)
+    content = ''
 
-    if hasattr(res_list['vms'], 'status_code'):
-        # success -> Elasticsearch
-        if res_list['vms'].status_code == 200:
-            cluster_name, input_size = es.input_data(res_list)
-            time.sleep(1)
+    if request.form.get('connect'):
+        # get from Nutanix cluster
+        res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
+        if hasattr(res_list['vms'], 'status_code'):
+            if res_list['vms'].status_code == 200:
+                # input to Elasticsearch
+                cluster_name, input_size = es.input_data(res_list)
+                time.sleep(1)
+                content = "データ取得完了"
+            else:
+                r_json = res_list['vms'].json()
+                content = r_json['message_list'][0]['message']
+        else: # timeout
+            content = 'timeout (wrong IP?)'
+    elif request.form.get('correct'):
+        content = 'correct'
 
     return render_template('index.html', \
-        content = 'res_list', \
+        content = content, \
         title = title)
+
 
 
 if __name__  == '__main__':

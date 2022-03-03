@@ -19,11 +19,18 @@
     <div class="container">
       <h1>{{title}}</h1>
     </div>
-    <div class="container">
-      <form submit="/" method="post">
-        <input type="submit" />
+    <div class="content ">
+      <form submit="/" method="post" class="float_l" >
+        <input type="hidden" name="connect" value="true">
+        <input type="submit" value="データ収集" />
       </form>
-      {{ content }}
+      <form submit="/" method="post">
+        <input type="hidden" name="correct" value="true">
+        <input type="submit" value="表示" />
+      </form>
+      <div>
+        {{ content }}
+      </div>
     </div>
 
     <footer>Copyright (C) konchangakita. All Rights Reserved.</footer>

@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import render_template, request
 import time
+import json
+
 
 import data_broker
 
@@ -24,9 +26,21 @@ cluster_name = 'POC20'
 
 title =  'Welcome to UUID X-plorer'
 
+def eswrite_smplejson(res_list):
+    print(res_list)
+    for _data in res_list:
+        data = res_list[_data].json()
+        print(data.keys())
+        path = 'sample/' + _data + '.json'
+        with open(path, 'w') as f:
+            f.write(json.dumps(data))
+
+
 def connect_cluster():
     # get from Nutanix cluster
     res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
+    #eswrite_smplejson(res_list)
+
     if hasattr(res_list['vms'], 'status_code'):
         if res_list['vms'].status_code == 200:
             # input to Elasticsearch
@@ -74,6 +88,21 @@ def index_post():
         title = title)
 
 
-
 if __name__  == '__main__':
     app.run(host="0.0.0.0", port=777, debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

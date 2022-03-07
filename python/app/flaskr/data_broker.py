@@ -74,11 +74,11 @@ class ElasticAPI():
             es.indices.create(index=index_name)
 
             alias = 'search_uuid'
-            es.indices.update_aliases(body={
-                'actions' : [{ 'add':
-                    { 'index': index_name, 'alias': alias }
-            }]
-        })
+            es.indices.update_aliases(
+                actions = [
+                    { 'add': { 'index': index_name, 'alias': alias }}
+                ]
+            )
 
     # put the data from Prism(Element) API to Elasticsearch
     def put_rest_pe(self, r_json, timestamp, cluster_name, cluster_uuid, index_name):

@@ -1,6 +1,6 @@
 # Prerequisites
-elastic/es-data/*
-blog/0307/elastic/es-data/*
+ongoing/elastic/es-data/*
+blog/*/elastic/es-data/*
 frontend/next-app/uuid-xplorer/node_modules/
 
 # MAC

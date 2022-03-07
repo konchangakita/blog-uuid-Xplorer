@@ -12,17 +12,6 @@ ntnx = data_broker.NutanixAPI()
 ELASTIC_SERVER = 'http://elasticsearch:9200'
 es = data_broker.ElasticAPI(es_server=ELASTIC_SERVER)
 
-
-#########################
-# Cluster情報を入力
-#########################
-#prism_ip = '10.xxx.xx.xxx'
-#prism_ip = '10.149.20.41'
-#prism_user = 'admin'
-#prism_pass = 'Nutanix/4u123!'
-#prism_pass = 'nutanix/4u'
-#cluster_name = 'POC20'
-
 title =  'Welcome to UUID X-plorer'
 
 def create_essmple(res_list):
@@ -34,6 +23,7 @@ def create_essmple(res_list):
 
 def connect_cluster():
     cluster_name = ''
+    # Formから受け取り
     prism_ip = request.form.get('prism_ip')
     prism_user = request.form.get('prism_user')
     prism_pass = request.form.get('prism_pass')

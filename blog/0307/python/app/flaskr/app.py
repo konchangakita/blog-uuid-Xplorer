@@ -12,25 +12,7 @@ ntnx = data_broker.NutanixAPI()
 ELASTIC_SERVER = 'http://elasticsearch:9200'
 es = data_broker.ElasticAPI(es_server=ELASTIC_SERVER)
 
-
-#########################
-# Cluster情報を入力
-#########################
-#prism_ip = '10.xxx.xx.xxx'
-#prism_ip = '10.149.20.41'
-#prism_user = 'admin'
-#prism_pass = 'Nutanix/4u123!'
-#prism_pass = 'nutanix/4u'
-#cluster_name = 'POC20'
-
 title =  'Welcome to UUID X-plorer'
-
-def create_essmple(res_list):
-    for _data in res_list:
-        data = res_list[_data].json()
-        path = 'sample/' + _data + '.json'
-        with open(path, 'w') as f:
-            f.write(json.dumps(data))
 
 def connect_cluster():
     cluster_name = ''
@@ -40,9 +22,6 @@ def connect_cluster():
 
     # get from Nutanix cluster
     res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
-
-    # sample
-    #create_essmple(res_list)
 
     if hasattr(res_list['vms'], 'status_code'):
         if res_list['vms'].status_code == 200:

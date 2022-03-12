@@ -32,6 +32,11 @@ class FormConnect extends React.Component {
 
   handleChangePrism(event) {
     console.log(event.target.name, event.target.value)
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({
+      [name]: value
+    });
   }
 
   render () {

@@ -9,4 +9,4 @@ pythonコンテナに接続し
 ブラウザからアクセス  
 `http://localhost:777/`  
   
-<image src="https://user-images.githubusercontent.com/64240365/158042010-b37dc820-7bb0-49dc-b008-89cab4d88836.png" width="700px">  
+<image src="https://user-images.githubusercontent.com/64240365/158023541-a69d85a6-4eed-48c1-a132-17209ab97f09.png" width="700px">  

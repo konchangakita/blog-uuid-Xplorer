@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  es01:
+    image: elasticsearch:7.14.2
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+    - ./elastic/es-data:/usr/share/elasticsearch/data:z
+    networks:
+      - uuid
+
+  kibana:
+    image: kibana:7.14.2
+    container_name: kibana
+    ports:
+      - 5601:5601
+    networks:
+      - uuid
+
+  python:
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    container_name: python
+    ports:
+      - 1234:8888
+      - 5678:5000
+      - 777:777
+    volumes:
+    - ./python/app:/home/app:z
+    networks:
+      - uuid
+
+networks:
+  uuid:
+    driver: bridge

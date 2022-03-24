@@ -28,6 +28,7 @@ class FormConnect extends React.Component {
       prism_pass: '' 
     };
     this.handleChangePrism = this.handleChangePrism.bind(this);
+    this.handleConnectPrism = this.handleConnectPrism.bind(this);
   }
 
   handleChangePrism(event) {
@@ -39,9 +40,40 @@ class FormConnect extends React.Component {
     });
   }
 
+  handleConnectPrism = async(event) => {
+    event.preventDefault();
+    console.log(this.state);
+
+    const requestOptions = {
+      method: "POST",
+      headers: {'Content-Type' : 'application/json'},
+      body: JSON.stringify({
+        prism_ip: this.state.prism_ip,
+        prism_user: this.state.prism_user,
+        prism_pass: this.state.prism_pass
+      })
+    }
+    const response = await fetch("/api/get_dataset_sample", requestOptions);
+    if (response.ok) { 
+      let res = await response.json();
+      console.log(res)
+      this.setState({
+        info: res,
+        title: res.title,
+        timeslot: res.timeslot,
+        showing : !this.state.showing
+      });
+    }
+    else {
+      alert("HTTP-Error: " + response.status);
+    }
+
+  }
+
+
   render () {
     return (
-      <form className="float_l" >
+      <form className="float_l" onSubmit={this.handleConnectPrism} >
         <input type="text" name="prism_ip" placeholder="Cluster IP" size="12" value={this.state.prism_ip} onChange={this.handleChangePrism} />
         <input type="text" name="prism_user" placeholder="Uesrname" size="10" value={this.state.prism_user} onChange={this.handleChangePrism} />
         <input type="password" name="prism_pass" placeholder="Password" size="10" value={this.state.prism_pass} onChange={this.handleChangePrism} />

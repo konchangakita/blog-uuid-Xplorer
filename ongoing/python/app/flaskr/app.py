@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template, request
+from flask import make_response, jsonify
 import time
 import json
 
@@ -7,6 +8,7 @@ import data_broker
 
 app = Flask(__name__)
 
+############################################################
 # set data_broker class
 ntnx = data_broker.NutanixAPI()
 ELASTIC_SERVER = 'http://elasticsearch:9200'
@@ -20,13 +22,14 @@ def create_essmple(res_list):
         path = 'sample/' + _data + '.json'
         with open(path, 'w') as f:
             f.write(json.dumps(data))
+############################################################
 
-def connect_cluster():
+def connect_cluster(request_form):
     cluster_name = ''
     # Formから受け取り
-    prism_ip = request.form.get('prism_ip')
-    prism_user = request.form.get('prism_user')
-    prism_pass = request.form.get('prism_pass')
+    prism_ip = request_form['prism_ip']
+    prism_user = request_form['prism_user']
+    prism_pass = request_form['prism_pass']
 
     # get from Nutanix cluster
     res_list = ntnx.get_xdata(prism_ip, prism_user, prism_pass)
@@ -39,14 +42,14 @@ def connect_cluster():
             # input to Elasticsearch
             cluster_name, input_size = es.input_data(res_list)
             time.sleep(1)
-            content = "データ取得完了"
+            info = "データ取得完了"
         else:
             r_json = res_list['vms'].json()
-            content = r_json['message_list'][0]['message']
+            info = r_json['message_list'][0]['message']
     else: # timeout
-        content = 'timeout (wrong IP?)'
+        info = 'timeout (wrong IP?)'
 
-    return content, cluster_name
+    return info, cluster_name
 
 def get_dataset(cluster_name):
     timeslot = es.get_timeslot(cluster_name)
@@ -70,17 +73,40 @@ def index():
 
 @app.route('/', methods=['POST'])
 def index_post():
-    content = ''
+    info = ''
     if request.form.get('connect'):
-        content, cluster_name = connect_cluster()
+        info, cluster_name = connect_cluster()
     elif request.form.get('display'):
         cluster_name = request.form.get('cluster_name')
-        content = get_dataset(cluster_name)
+        info = get_dataset(cluster_name)
 
     return render_template('index.html', \
-        content = content, \
+        info = info, \
         cluster_name = cluster_name, \
         title = title)
+
+@app.route('/api/connect', methods=['POST'])
+def connect():
+    data = {}
+    print(request.json)
+    data['info'], data['cluster_name'] = connect_cluster(request.json)
+    print(data)
+
+    return make_response(jsonify(data))
+
+
+
+@app.route('/api/get_dataset_sample', methods=['POST', 'GET'])
+def get_dataset_sample():
+    data = {}
+    r_data = {}
+    with open('sample/vms.json') as f:
+        data['vms'] = json.load(f)
+    with open('sample/volume_group.json') as f:
+        data['volume_groups'] = json.load(f)
+
+    
+    return make_response(jsonify(data))
 
 
 if __name__  == '__main__':

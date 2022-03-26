@@ -2,6 +2,7 @@ class List extends React.Component {
   render () {
     return (
       <div className="list">
+        {this.props.info} {this.props.cluster_name}
       </div>
     );
   }
@@ -11,7 +12,7 @@ class FormDisplay extends React.Component {
   render () {
     return (
       <form submit="/" method="post">
-        <input type="text" name="cluster_name" placeholder="Cluster name" size="10" ></input>
+        <input type="text" name="clusterName" placeholder="Cluster name" size="10" value={this.props.clusterName} onChange={this.props.handleChangePrism} />
         <input type="hidden" name="display" value="true" />
         <input type="submit" value="表示" />
       </form>
@@ -20,12 +21,48 @@ class FormDisplay extends React.Component {
 }
 
 class FormConnect extends React.Component {
+  render () {
+    return (
+      <form className="float_l" onSubmit={this.props.handleConnectPrism} >
+        <input type="text" name="prismIp" placeholder="Cluster IP" size="12" value={this.props.prismIp} onChange={this.props.handleChangePrism} />
+        <input type="text" name="prismUser" placeholder="Uesrname" size="10" value={this.props.prismUser} onChange={this.props.handleChangePrism} />
+        <input type="password" name="prismPass" placeholder="Password" size="10" value={this.props.prismPass} onChange={this.props.handleChangePrism} />
+        <input type="hidden" name="connect" value="true" />
+        <input type="submit" value="データ収集" />
+      </form>
+    );
+  }
+}
+
+class Form extends React.Component {
+  render () {
+    return (
+      <div>
+        <FormConnect
+          handleChangePrism = {this.props.handleChangePrism}
+          prismIp={this.props.prismIp}
+          prismUser={this.props.prismUser}
+          prismPass={this.props.prismPass}
+          handleConnectPrism = {this.props.handleConnectPrism}
+        />
+        <FormDisplay
+          handleChangePrism = {this.props.handleChangePrism}
+          clusterName = {this.props.clusterName}
+        />
+      </div>
+    );
+  }
+}
+
+class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      prism_ip: '',
-      prism_user: '',
-      prism_pass: '' 
+      prismIp: '',
+      prismUser: '',
+      prismPass: '',
+      clusterName: '',
+      info: ''
     };
     this.handleChangePrism = this.handleChangePrism.bind(this);
     this.handleConnectPrism = this.handleConnectPrism.bind(this);
@@ -48,59 +85,39 @@ class FormConnect extends React.Component {
       method: "POST",
       headers: {'Content-Type' : 'application/json'},
       body: JSON.stringify({
-        prism_ip: this.state.prism_ip,
-        prism_user: this.state.prism_user,
-        prism_pass: this.state.prism_pass
+        prism_ip: this.state.prismIp,
+        prism_user: this.state.prismUser,
+        prism_pass: this.state.prismPass,
       })
     }
-    const response = await fetch("/api/get_dataset_sample", requestOptions);
-    if (response.ok) { 
+    const response = await fetch("/api/connect", requestOptions);
+    if (response.ok) {
       let res = await response.json();
       console.log(res)
       this.setState({
-        info: res,
-        title: res.title,
-        timeslot: res.timeslot,
-        showing : !this.state.showing
+        info: res.info
       });
     }
     else {
       alert("HTTP-Error: " + response.status);
     }
-
   }
 
-
-  render () {
-    return (
-      <form className="float_l" onSubmit={this.handleConnectPrism} >
-        <input type="text" name="prism_ip" placeholder="Cluster IP" size="12" value={this.state.prism_ip} onChange={this.handleChangePrism} />
-        <input type="text" name="prism_user" placeholder="Uesrname" size="10" value={this.state.prism_user} onChange={this.handleChangePrism} />
-        <input type="password" name="prism_pass" placeholder="Password" size="10" value={this.state.prism_pass} onChange={this.handleChangePrism} />
-        <input type="hidden" name="connect" value="true" />
-        <input type="submit" value="データ収集" />
-      </form>
-    );
-  }
-}
-
-class Form extends React.Component {
-  render () {
-    return (
-      <div>
-        <FormConnect />
-        <FormDisplay />
-      </div>
-    );
-  }
-}
-
-class Content extends React.Component {
   render () {
     return (
       <div className="content ">
-        <Form />
-        <List />
+        <Form
+          handleChangePrism = {this.handleChangePrism}
+          prismIp={this.state.prismIp}
+          prismUser={this.state.prismUser}
+          prismPass={this.state.prismPass}
+          handleConnectPrism = {this.handleConnectPrism}
+          clusterName = {this.state.clusterName}
+        />
+        <List
+          info = {this.state.info}
+          clusterName = {this.state.clusterName}
+        />
       </div>
     );
   }

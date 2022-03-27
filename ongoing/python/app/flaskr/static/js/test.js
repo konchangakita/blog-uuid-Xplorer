@@ -1,8 +1,25 @@
 class List extends React.Component {
   render () {
+    const data = this.props.data;
+    const vms = data.vms || "";
+    const volumeGroups = data.volume_groups || "";
+    const listVms = vms ?
+      vms.map((vm, key) => {
+        return (
+          <li key={key}>
+            {vm.spec.name} : {vm.metadata.uuid}
+          </li>
+        );
+      })
+      : null;
+
+
     return (
       <div className="list">
-        {this.props.info} {this.props.cluster_name}
+        {this.props.info}
+        <ol>
+          {listVms}
+        </ol>
       </div>
     );
   }
@@ -11,9 +28,8 @@ class List extends React.Component {
 class FormDisplay extends React.Component {
   render () {
     return (
-      <form submit="/" method="post">
+      <form submit="/" onSubmit={this.props.handleGetDataset} >
         <input type="text" name="clusterName" placeholder="Cluster name" size="10" value={this.props.clusterName} onChange={this.props.handleChangePrism} />
-        <input type="hidden" name="display" value="true" />
         <input type="submit" value="表示" />
       </form>
     );
@@ -27,7 +43,6 @@ class FormConnect extends React.Component {
         <input type="text" name="prismIp" placeholder="Cluster IP" size="12" value={this.props.prismIp} onChange={this.props.handleChangePrism} />
         <input type="text" name="prismUser" placeholder="Uesrname" size="10" value={this.props.prismUser} onChange={this.props.handleChangePrism} />
         <input type="password" name="prismPass" placeholder="Password" size="10" value={this.props.prismPass} onChange={this.props.handleChangePrism} />
-        <input type="hidden" name="connect" value="true" />
         <input type="submit" value="データ収集" />
       </form>
     );
@@ -47,6 +62,7 @@ class Form extends React.Component {
         />
         <FormDisplay
           handleChangePrism = {this.props.handleChangePrism}
+          handleGetDataset = {this.props.handleGetDataset}
           clusterName = {this.props.clusterName}
         />
       </div>
@@ -62,10 +78,12 @@ class Content extends React.Component {
       prismUser: '',
       prismPass: '',
       clusterName: '',
-      info: ''
+      info: '',
+      data: ''
     };
     this.handleChangePrism = this.handleChangePrism.bind(this);
     this.handleConnectPrism = this.handleConnectPrism.bind(this);
+    this.handleGetDataset = this.handleGetDataset.bind(this);
   }
 
   handleChangePrism(event) {
@@ -95,7 +113,31 @@ class Content extends React.Component {
       let res = await response.json();
       console.log(res)
       this.setState({
-        info: res.info
+        info: res.info,
+        clusterName: res.cluster_name,
+      });
+    }
+    else {
+      alert("HTTP-Error: " + response.status);
+    }
+  }
+
+  handleGetDataset = async(event) => {
+    event.preventDefault();
+
+    const requestOptions = {
+      method: "POST",
+      headers: {'Content-Type' : 'application/json'},
+      body: JSON.stringify({
+        cluster_name: this.state.clusterName
+      })
+    }
+    const response = await fetch("/api/latestdataset", requestOptions);
+    if (response.ok) {
+      let res = await response.json();
+      console.log(res)
+      this.setState({
+        data: res,
       });
     }
     else {
@@ -112,11 +154,13 @@ class Content extends React.Component {
           prismUser={this.state.prismUser}
           prismPass={this.state.prismPass}
           handleConnectPrism = {this.handleConnectPrism}
+          handleGetDataset = {this.handleGetDataset}
           clusterName = {this.state.clusterName}
         />
         <List
           info = {this.state.info}
           clusterName = {this.state.clusterName}
+          data = {this.state.data}
         />
       </div>
     );

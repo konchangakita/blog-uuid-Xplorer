@@ -94,6 +94,12 @@ def connect():
 
     return make_response(jsonify(data))
 
+@app.route('/api/latestdataset', methods=['POST'])
+def latestdataset():
+    cluster_name = request.json['cluster_name']
+    data = get_dataset(cluster_name)
+    print(data)
+    return make_response(jsonify(data))
 
 
 @app.route('/api/get_dataset_sample', methods=['POST', 'GET'])

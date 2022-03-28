@@ -56,7 +56,8 @@ def get_dataset(cluster_name):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', \
+        title = title)
 
 @app.route('/', methods=['POST'])
 def index_post():

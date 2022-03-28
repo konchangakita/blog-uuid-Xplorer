@@ -8,6 +8,13 @@ import data_broker
 
 app = Flask(__name__)
 
+# set data_broker class
+ntnx = data_broker.NutanixAPI()
+ELASTIC_SERVER = 'http://elasticsearch:9200'
+es = data_broker.ElasticAPI(es_server=ELASTIC_SERVER)
+
+title =  'Welcome to UUID X-plorer'
+
 def connect_cluster(request_form):
     cluster_name = ''
     # Formから受け取り
@@ -49,8 +56,7 @@ def get_dataset(cluster_name):
 
 @app.route('/')
 def index():
-    return render_template('index.html', \
-        title = title)
+    return render_template('index.html')
 
 @app.route('/', methods=['POST'])
 def index_post():

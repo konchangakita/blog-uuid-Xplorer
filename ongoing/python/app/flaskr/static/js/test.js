@@ -1,21 +1,26 @@
 class List extends React.Component {
   render () {
     const data = this.props.data;
-    const vms = data.vms || "";
-    const volumeGroups = data.volume_groups || "";
+    const vms = data.vms;
+    const volumeGroups = data.volume_groups;
+    const filterText = this.props.filterText
+
     const listVms = vms ?
       vms.map((vm, key) => {
-        return (
-          <li key={key}>
-            {vm.spec.name} : {vm.metadata.uuid}
-          </li>
-        );
+        if ( vm.spec.name.indexOf(filterText) !== -1 ) {
+          return (
+            <li key={key}>
+              {vm.spec.name} : {vm.metadata.uuid}
+            </li>
+          );
+        }
+        return;
       })
       : null;
 
-
     return (
       <div className="list">
+        <div><input type="text" placeholder="filter..." name="filterText" onChange={this.props.handleChangePrism} /></div>
         {this.props.info}
         <ol>
           {listVms}
@@ -79,7 +84,8 @@ class Content extends React.Component {
       prismPass: '',
       clusterName: '',
       info: '',
-      data: ''
+      data: '',
+      filterText: ''
     };
     this.handleChangePrism = this.handleChangePrism.bind(this);
     this.handleConnectPrism = this.handleConnectPrism.bind(this);
@@ -158,9 +164,11 @@ class Content extends React.Component {
           clusterName = {this.state.clusterName}
         />
         <List
+          handleChangePrism = {this.handleChangePrism}
           info = {this.state.info}
           clusterName = {this.state.clusterName}
           data = {this.state.data}
+          filterText = {this.state.filterText}
         />
       </div>
     );

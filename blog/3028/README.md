@@ -1,3 +1,9 @@
+## 環境準備
+Docker(desktop)  
+Nutanixクラスタに接続できること  
+Google Chrome（Firefoxは表示が崩れることがあります）  
+  
+
 ## 起動方法
 コンテナ起動  
 `docker-compose -f "docker-compose.yml" up -d --build`  

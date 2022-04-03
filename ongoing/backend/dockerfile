@@ -1,4 +1,4 @@
-FROM python:3.9.9-slim
+FROM python:3.10.4-slim
 
 RUN apt update -y
 RUN apt install -y curl
@@ -6,9 +6,11 @@ RUN pip install -U pip
 RUN pip install flask
 RUN pip install jupyterlab
 RUN pip install elasticsearch
+RUN pip install paramiko
 
 #RUN apt install -y netcat
-WORKDIR /home
+WORKDIR /usr/src
 
+#USER 1000
 # execute jpyterlab
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
+CMD ["tail", "-f", "/dev/null"]

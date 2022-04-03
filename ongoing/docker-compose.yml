@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   es01:
-    image: elasticsearch:7.14.2
+    image: elasticsearch:7.17.2
     container_name: elasticsearch
     environment:
       - discovery.type=single-node
@@ -14,24 +14,40 @@ services:
       - uuid
 
   kibana:
-    image: kibana:7.14.2
+    image: kibana:7.17.2
     container_name: kibana
     ports:
       - 5601:5601
     networks:
       - uuid
 
-  python:
+  backend:
     build:
-      context: ./python
+      context: ./backend
       dockerfile: Dockerfile
-    container_name: python
+    container_name: backend
     ports:
       - 1234:8888
       - 5678:5000
-      - 777:777
+      - 7777:7777
     volumes:
-    - ./python/app:/home/app:z
+    - ./backend:/usr/src/:z
+    networks:
+      - uuid
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "7778:3000"
+    volumes:
+    - ./frontend/next-app:/usr/src/next-app:z
+    command: bash -c "cd /usr/src/next-app/uuid-xplorer
+      && tail -f /dev/null"
+    #  && npm install
+    #  && npm i nextjs-progressbar
     networks:
       - uuid
 

@@ -1,7 +1,6 @@
 # Prerequisites
 ongoing/elastic/es-data/*
 blog/*/elastic/es-data/*
-frontend/next-app/uuid-xplorer/node_modules/
 
 # MAC
 .DS_Store

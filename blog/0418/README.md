@@ -19,5 +19,4 @@ frontendコンテナに接続し
 ブラウザからアクセス  
 `http://localhost:7778/`  
   
-<image src="https://user-images.githubusercontent.com/64240365/162609962-823dd11c-a103-4d61-b98e-089c894a47fe.png" width="700px">  
-
+<image src="https://user-images.githubusercontent.com/64240365/162610455-d1a2d36d-99a5-47c3-8cd0-636489b0d3c2.png" width="700px">  

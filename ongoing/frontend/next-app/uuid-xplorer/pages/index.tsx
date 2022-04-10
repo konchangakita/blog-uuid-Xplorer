@@ -3,6 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+//fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -13,7 +17,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        Welcome to UUID Xplorer
+        <div className='text-red-500'>Welcome to UUID Xplorer</div>
+        <FontAwesomeIcon icon={faArrowCircleRight} size="2x" />
       </main>
     </div>
   )

@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(202, 214, 226);
+    padding: 0px;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+}
+
+nav{
+    height: 40px;
+}
+
+h2{
+    margin: 0;
+
+}
+
+input {
+    padding-left: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+}
+
+.float_l {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	float: left;
+
+    border: 1px solid;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.top-content{
+    max-width: 80%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cluster{
+    font-size: 90%;
+    margin-left: 60px;
+}
+
+.cluster div{
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.cluster input{
+    width: 90px;
+}
+
+.cluster .submit{
+    width: 120px;
+}
+
+.timeslot{
+    margin-top: 30px;
+    margin-left: 75px;
+}
+
+.timeslot div{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.timeslot select{
+    width: 180px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.search_input{
+    margin-left: 40px;
+}
+
+.search input{
+    width: 300px;
+}
+
+.search div{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.output-content{
+    background-color: white;
+    max-width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 20px 20px;
+
+    border: 1px solid;
+}
+
+.output-content div{
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.vm-name{
+    width: 180px;
+    text-align: left;
+}
+
+.uuid{
+    width: 500px;
+    text-align: left;
+}

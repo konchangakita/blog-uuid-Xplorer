@@ -1,5 +1,5 @@
 ## ブログエントリ
-<a href="https://konchangakita.hatenablog.com/archive/2022/04/04" target="_blank" rel="noopener noreferrer">【Nutanix UUIDエクスプローラーを作ってみよう】React で JavaScript へ挑戦 - filter編</a>
+<a href="https://konchangakita.hatenablog.com/entry/2022/04/04/210000" target="_blank" rel="noopener noreferrer">【Nutanix UUIDエクスプローラーを作ってみよう】React で JavaScript へ挑戦 - filter編</a>
 
 
 ## 環境準備

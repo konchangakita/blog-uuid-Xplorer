@@ -45,8 +45,8 @@ services:
     volumes:
     - ./frontend/next-app:/usr/src/next-app:z
     command: bash -c "cd /usr/src/next-app/uuid-xplorer
+      && npm install
       && tail -f /dev/null"
-    #  && npm install
     #  && npm i nextjs-progressbar
     networks:
       - uuid

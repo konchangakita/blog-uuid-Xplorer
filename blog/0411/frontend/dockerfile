@@ -1,0 +1,8 @@
+FROM node:latest
+
+WORKDIR /usr/src/next-app/
+
+RUN apt update -y
+RUN apt install -y curl
+
+#USER 1000

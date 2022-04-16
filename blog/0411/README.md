@@ -1,5 +1,5 @@
 ## ブログエントリ
-<a hre="https://konchangakita.hatenablog.com/entry/2022/04/11/210000">【Nutanix UUIDエクスプローラーを作ってみよう】Next.js で 導入</a>
+<a href="https://konchangakita.hatenablog.com/entry/2022/04/11/210000">【Nutanix UUIDエクスプローラーを作ってみよう】Next.js で 導入</a>
 
 
 ## 環境準備

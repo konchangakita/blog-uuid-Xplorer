@@ -1,0 +1,2461 @@
+{
+  "metadata": {
+    "grand_total_entities": 32,
+    "total_entities": 0,
+    "count": 32
+  },
+  "entities": [
+    {
+      "uuid": "fbf9cc89-a129-4b9d-9780-df39a7a974e3",
+      "name": "pvc-0eed43f3-14f4-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: anc-mysql-0, Namespace: default, ServiceAccount: default",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "c68cbb3c-cdca-4f59-b2e4-3a530d59329c",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 1024,
+          "vmdisk_size_bytes": 1073741824,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/c68cbb3c-cdca-4f59-b2e4-3a530d59329c",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-fbf9cc89-a129-4b9d-9780-df39a7a974e3",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "fa6e4110-8235-4fff-8349-e429840588aa",
+      "name": "registry-3be6282d-351e-4bcd-7ebe-222fb105682b",
+      "logical_timestamp": 2,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "e57786b1-b386-46fc-897b-945a3c968874",
+          "container_id": 632,
+          "storage_container_id": 632,
+          "container_uuid": "b288bdfd-91e2-485f-aa07-f8806a1a1131",
+          "storage_container_uuid": "b288bdfd-91e2-485f-aa07-f8806a1a1131",
+          "vmdisk_size_mb": 102400,
+          "vmdisk_size_bytes": 107374182400,
+          "vmdisk_path": "/SelfServiceContainer/.acropolis/vmdisk/e57786b1-b386-46fc-897b-945a3c968874"
+        }
+      ],
+      "iscsi_target": "e8f0c641406115503645b334bede24ba1c133aedca70c74c4c6b9d5ecc7217ee:nutanix-docker-volume-plugin",
+      "attachment_list": [
+        {
+          "client_uuid": "8fcc7d4e-2273-404a-bfc5-439c0072ebd7",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:ae77d54ebede"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "dbb56a2e-8ef0-45a8-b4eb-b5af64d6241f",
+      "name": "File_Analytics_VG",
+      "description": "",
+      "logical_timestamp": 3,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "6dc80455-c895-47ed-8278-dd4d94a1e912",
+          "container_id": 12,
+          "storage_container_id": 12,
+          "container_uuid": "0f887a94-6051-4996-8759-48f62188c175",
+          "storage_container_uuid": "0f887a94-6051-4996-8759-48f62188c175",
+          "vmdisk_size_mb": 2097152,
+          "vmdisk_size_bytes": 2199023255552,
+          "vmdisk_path": "/default-container-90129684887843/.acropolis/vmdisk/6dc80455-c895-47ed-8278-dd4d94a1e912",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "fa-dbb56a2e-8ef0-45a8-b4eb-b5af64d6241f",
+      "attachment_list": [
+        {
+          "vm_uuid": "136b24a0-8c2d-4fe1-9ef5-10bce0299f23"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "dd5ef4da-c2a3-42df-aa54-e97a2bbf20fb",
+      "name": "NTNX-ohtani02-696ff7a7-a1b2-4917-9280-0970feae0652-dd5ef4da-c2a3-42df-aa54-e97a2bbf20fb",
+      "logical_timestamp": 8,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "718ea49a-e356-4740-b3ea-35fc2941f1c0",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/718ea49a-e356-4740-b3ea-35fc2941f1c0"
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "333c69bf-7836-4cc8-b15a-facf9c7ba14f",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/333c69bf-7836-4cc8-b15a-facf9c7ba14f"
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "8a52ebec-ea0d-474d-9f7f-718ffd965ac6",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/8a52ebec-ea0d-474d-9f7f-718ffd965ac6"
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "c89742fe-2a93-4f84-89b1-c2f226090fc2",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/c89742fe-2a93-4f84-89b1-c2f226090fc2"
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "126d933f-cca8-49c4-ac43-49d40b0d782d",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/126d933f-cca8-49c4-ac43-49d40b0d782d"
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "6f9c1f2e-7e69-400e-b848-f477af74d238",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/6f9c1f2e-7e69-400e-b848-f477af74d238"
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "bb6f7a26-a7da-441e-a874-224f9b55515e",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/bb6f7a26-a7da-441e-a874-224f9b55515e"
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "2c30bda1-c85f-4848-88bd-040a3d9e4850",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/2c30bda1-c85f-4848-88bd-040a3d9e4850"
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "fc3927af-31c9-4e96-b8cf-2f7071c8a077",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/fc3927af-31c9-4e96-b8cf-2f7071c8a077"
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "b8766af2-acf4-4ef1-8c20-ec9f07b5e5fe",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/b8766af2-acf4-4ef1-8c20-ec9f07b5e5fe"
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "08d839e2-ccdb-4c14-b38e-ce367153c9af",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/08d839e2-ccdb-4c14-b38e-ce367153c9af"
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "dad44e37-a165-4319-8b5e-193df98facec",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/dad44e37-a165-4319-8b5e-193df98facec"
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "234f61da-e2ce-462a-9495-bde40c6bf54e",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/234f61da-e2ce-462a-9495-bde40c6bf54e"
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "1d26eaf1-6ef5-4940-be84-917d441b8351",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/1d26eaf1-6ef5-4940-be84-917d441b8351"
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "da4e64c7-50ad-45a3-a5eb-3d599c99c2c2",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/da4e64c7-50ad-45a3-a5eb-3d599c99c2c2"
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "268628b8-dc7f-4c4f-8b96-3d411744713b",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/268628b8-dc7f-4c4f-8b96-3d411744713b"
+        }
+      ],
+      "iscsi_target": "dd5ef4da-c2a3-42df-aa54-e97a2bbf20fb",
+      "attachment_list": [
+        {
+          "client_uuid": "7938f34c-68ee-4fc2-944f-28aa138be90d",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:af7ec122-2dab-42a3-8541-b807b2562d97"
+        },
+        {
+          "client_uuid": "bb84a366-870a-4612-8ebd-0ab02fd77398",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:d675d41b-b583-41b8-b29a-2869e4272e1f"
+        },
+        {
+          "client_uuid": "d4aa8152-1c8e-41da-8918-c8fa081260f2",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:174de53b-6d93-43bd-bf1b-c1bf6b6c1b8d"
+        }
+      ],
+      "is_shared": true
+    },
+    {
+      "uuid": "e39760e7-d5ce-403e-af29-5beaa505248b",
+      "name": "poc20-c5741c-pc-03",
+      "logical_timestamp": 10,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "279c3fed-118c-4dbe-a647-c88404438b1a",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 102400,
+          "vmdisk_size_bytes": 107374182400,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/279c3fed-118c-4dbe-a647-c88404438b1a"
+        }
+      ],
+      "iscsi_target": "69a860fcd583d9585d9402f920b0f33cdb89b8394e0a853a1f3e0a26c106f5ae:nutanix-docker-volume-plugin",
+      "attachment_list": [
+        {
+          "client_uuid": "11fcda8d-9880-4381-a35d-13771ca68af0",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:e5d2ad0de3b"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "e06a1a2d-ec56-4ed6-99bd-b1e60c20ea37",
+      "name": "ext-iscsi",
+      "description": "",
+      "logical_timestamp": 2,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "e61d0f54-ce13-4fb0-aa8f-235b7c31c60e",
+          "container_id": 12,
+          "storage_container_id": 12,
+          "container_uuid": "0f887a94-6051-4996-8759-48f62188c175",
+          "storage_container_uuid": "0f887a94-6051-4996-8759-48f62188c175",
+          "vmdisk_size_mb": 10240,
+          "vmdisk_size_bytes": 10737418240,
+          "vmdisk_path": "/default-container-90129684887843/.acropolis/vmdisk/e61d0f54-ce13-4fb0-aa8f-235b7c31c60e",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ext-iscsi-e06a1a2d-ec56-4ed6-99bd-b1e60c20ea37",
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "ed8a4f90-23f9-4812-b100-f2ee7be9d517",
+      "name": "pvc-872259e9-0a1d-11ec-aee6-506b8df5e86b",
+      "description": "Pod: lb-controller-deployment-0, Namespace: kube-system, ServiceAccount: lb-controller-service-account",
+      "logical_timestamp": 3,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "71ce2095-f56e-4b62-ad2b-e5ceb4f0a2d0",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 8192,
+          "vmdisk_size_bytes": 8589934592,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/71ce2095-f56e-4b62-ad2b-e5ceb4f0a2d0",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-ed8a4f90-23f9-4812-b100-f2ee7be9d517",
+      "attachment_list": [
+        {
+          "client_uuid": "8fcc7d4e-2273-404a-bfc5-439c0072ebd7",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:ae77d54ebede"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "f7ce441d-8995-4dee-899f-df67922b058c",
+      "name": "pvc-a839e99f-0a1d-11ec-aee6-506b8df5e86b",
+      "description": "Pod: prometheus-k8s-0, Namespace: ntnx-system, ServiceAccount: prometheus-k8s",
+      "logical_timestamp": 3,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "8e287932-4a93-45a6-8f95-c4e30626b484",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 30720,
+          "vmdisk_size_bytes": 32212254720,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/8e287932-4a93-45a6-8f95-c4e30626b484",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-f7ce441d-8995-4dee-899f-df67922b058c",
+      "attachment_list": [
+        {
+          "client_uuid": "8fcc7d4e-2273-404a-bfc5-439c0072ebd7",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:ae77d54ebede"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "f50f0c65-d9e9-4217-95fa-7f412c0b9be0",
+      "name": "NTNX-test-fs01-fb11e689-58a7-4710-900b-2698455cf1d5-f50f0c65-d9e9-4217-95fa-7f412c0b9be0",
+      "description": "",
+      "logical_timestamp": 1,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "21cb711b-2831-40c8-bcf9-346c947c3436",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/21cb711b-2831-40c8-bcf9-346c947c3436"
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "58535690-2a22-460e-b0d9-6fdc37b80420",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/58535690-2a22-460e-b0d9-6fdc37b80420"
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "95373ca0-718f-477d-9694-b2580297f5ae",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/95373ca0-718f-477d-9694-b2580297f5ae"
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "bfabb17f-66ae-4e1e-8d88-71119bbf3f58",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/bfabb17f-66ae-4e1e-8d88-71119bbf3f58"
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "5957c9cc-948f-4a69-84e7-391a8f009507",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/5957c9cc-948f-4a69-84e7-391a8f009507"
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "22b3714f-d6b4-4d1e-b135-7484eefda7ca",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/22b3714f-d6b4-4d1e-b135-7484eefda7ca"
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "095b3117-2cb0-4742-a644-95d92339a1c4",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/095b3117-2cb0-4742-a644-95d92339a1c4"
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "c8ac716f-da81-4090-830c-58e447d8629f",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/c8ac716f-da81-4090-830c-58e447d8629f"
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "220eefec-c1e2-474c-afbe-15ed0b2b6956",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/220eefec-c1e2-474c-afbe-15ed0b2b6956"
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "c3f0551a-0be0-4d3e-bf53-2f17f9ccaf81",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/c3f0551a-0be0-4d3e-bf53-2f17f9ccaf81"
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "ab4f9ac1-908b-49df-ac04-9a81f8ee5162",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/ab4f9ac1-908b-49df-ac04-9a81f8ee5162"
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "35c1ebd3-fa6c-4543-9913-18930a7ae450",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/35c1ebd3-fa6c-4543-9913-18930a7ae450"
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "7700d9a0-a576-4ed6-aa9e-56df1fad9ac0",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/7700d9a0-a576-4ed6-aa9e-56df1fad9ac0"
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "c87e51a8-b8c4-4fb6-ae8b-21050403f8f0",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/c87e51a8-b8c4-4fb6-ae8b-21050403f8f0"
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "66c83b95-bbd4-4dfd-922a-b4dc345e87e0",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/66c83b95-bbd4-4dfd-922a-b4dc345e87e0"
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "a5d4d9d2-0af0-4a4c-a62e-17ace8a220af",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/a5d4d9d2-0af0-4a4c-a62e-17ace8a220af"
+        }
+      ],
+      "iscsi_target": "f50f0c65-d9e9-4217-95fa-7f412c0b9be0",
+      "is_shared": true
+    },
+    {
+      "uuid": "037ed504-3be8-48f5-82bc-4b94602f8695",
+      "name": "NTNX-ohtani01-a28c0c39-a24d-479f-a375-5f2b1308047f-037ed504-3be8-48f5-82bc-4b94602f8695",
+      "logical_timestamp": 7,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "0c79db62-af19-448f-bfe2-02a60c27f408",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/0c79db62-af19-448f-bfe2-02a60c27f408",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "c73cf356-d6a0-4313-b0c4-93c1f7760921",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/c73cf356-d6a0-4313-b0c4-93c1f7760921",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "bc69da23-fd45-4e9a-bc90-c51674dbb430",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/bc69da23-fd45-4e9a-bc90-c51674dbb430",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "05f1346f-2f40-4560-bf7c-126d9a8865b8",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/05f1346f-2f40-4560-bf7c-126d9a8865b8",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "a0c260fe-305e-4bec-9a22-c5b489d55886",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/a0c260fe-305e-4bec-9a22-c5b489d55886",
+          "flash_mode_enabled": true
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "8be19e77-df6b-4512-a13f-7d2fd596279d",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/8be19e77-df6b-4512-a13f-7d2fd596279d",
+          "flash_mode_enabled": true
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "446bb135-410f-48b9-8bb5-ae481e9b28dc",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/446bb135-410f-48b9-8bb5-ae481e9b28dc",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "c27d8443-cc4c-4946-8448-d4cf8b8eada2",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/c27d8443-cc4c-4946-8448-d4cf8b8eada2",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "5c57af14-6265-4a70-83aa-a6919d8d142f",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/5c57af14-6265-4a70-83aa-a6919d8d142f",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "fd646f7f-c7cc-4278-927c-e8c2c1082a22",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/fd646f7f-c7cc-4278-927c-e8c2c1082a22",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "0b8c949d-d990-4c80-8969-451d8a1f73a8",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/0b8c949d-d990-4c80-8969-451d8a1f73a8",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "64662173-83e6-4008-84f5-e432b5c409aa",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/64662173-83e6-4008-84f5-e432b5c409aa",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "2fce2735-3302-4812-a5da-d861a55272b4",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/2fce2735-3302-4812-a5da-d861a55272b4",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "b2555cd2-35ad-42de-aeae-0c388d1552ee",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/b2555cd2-35ad-42de-aeae-0c388d1552ee",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "26539ef8-7e9c-4d34-bb22-4ac27f0796b4",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/26539ef8-7e9c-4d34-bb22-4ac27f0796b4",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "20498b17-83c5-47a9-89f6-daacf8d34e4a",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/20498b17-83c5-47a9-89f6-daacf8d34e4a",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "037ed504-3be8-48f5-82bc-4b94602f8695",
+      "attachment_list": [
+        {
+          "client_uuid": "08a31496-d1c5-4b68-94a1-eb41b327e46d",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:5e2c2835-17d7-42ba-acf2-e874d605a20c"
+        }
+      ],
+      "flash_mode_enabled": true,
+      "is_shared": true
+    },
+    {
+      "uuid": "0bae7755-acef-464d-8432-79f90ce95d69",
+      "name": "NTNX-ohtani01-e750ddf9-1156-46e0-8a71-acfde0b0533b-0bae7755-acef-464d-8432-79f90ce95d69",
+      "logical_timestamp": 2,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "8f3b9b8c-c76e-4224-b253-31cb5f70d8bb",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/8f3b9b8c-c76e-4224-b253-31cb5f70d8bb",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "5460e77f-aad0-42a5-8458-414949fac8a3",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/5460e77f-aad0-42a5-8458-414949fac8a3",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "543bfcd9-bee6-4f7e-9de3-cd931329f80e",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/543bfcd9-bee6-4f7e-9de3-cd931329f80e",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "4fd2d31f-1a5a-4991-8c2d-215d1390dec5",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/4fd2d31f-1a5a-4991-8c2d-215d1390dec5",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "0a605caf-3480-4eb9-8b1b-7e0fb95a79e6",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/0a605caf-3480-4eb9-8b1b-7e0fb95a79e6",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "61002fdd-961e-4979-9d81-99afd646a9a8",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/61002fdd-961e-4979-9d81-99afd646a9a8",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "5765f175-5b6f-4cbb-828f-b159bfb77056",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/5765f175-5b6f-4cbb-828f-b159bfb77056",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "06175f13-3a0d-47d7-b782-5ffc65b23038",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/06175f13-3a0d-47d7-b782-5ffc65b23038",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "1db2460e-f236-4d97-9d8e-1d7213963f01",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/1db2460e-f236-4d97-9d8e-1d7213963f01",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "ea42d19b-7a2c-4829-8911-0aab40f38a7c",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/ea42d19b-7a2c-4829-8911-0aab40f38a7c",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "def9ad44-dca1-435b-8b5d-a230dd5c9aef",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/def9ad44-dca1-435b-8b5d-a230dd5c9aef",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "e5483691-0bbb-4db4-9241-5b81228f4186",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/e5483691-0bbb-4db4-9241-5b81228f4186",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "f2e98879-6c10-4d0e-81f9-f7eb9bd47bb0",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/f2e98879-6c10-4d0e-81f9-f7eb9bd47bb0",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "80e00701-b8d8-4c0e-b375-abff92831e80",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/80e00701-b8d8-4c0e-b375-abff92831e80",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "b703cc6d-202d-4315-9e58-92f2391b98cc",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/b703cc6d-202d-4315-9e58-92f2391b98cc",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "edace739-92ea-409a-b3e7-a160c96de0fe",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/edace739-92ea-409a-b3e7-a160c96de0fe",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 16,
+          "vmdisk_uuid": "04954f80-8d50-444e-8272-2be83952084e",
+          "container_id": 3052455,
+          "storage_container_id": 3052455,
+          "container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "storage_container_uuid": "3d4c0ec3-d3e0-4330-bd76-8a6c5747916b",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test_ctr/.acropolis/vmdisk/04954f80-8d50-444e-8272-2be83952084e",
+          "flash_mode_enabled": true
+        }
+      ],
+      "iscsi_target": "0bae7755-acef-464d-8432-79f90ce95d69",
+      "attachment_list": [
+        {
+          "client_uuid": "08a31496-d1c5-4b68-94a1-eb41b327e46d",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:5e2c2835-17d7-42ba-acf2-e874d605a20c"
+        }
+      ],
+      "flash_mode_enabled": true,
+      "is_shared": true
+    },
+    {
+      "uuid": "09ac5164-6bbd-4b80-bd12-d8f2c07dfec5",
+      "name": "pvc-d4093b65-147a-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: stolon-keeper-1, Namespace: ntnx-base, ServiceAccount: default",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "3786135d-49c7-46e2-831e-f0d0fd144f55",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 1024,
+          "vmdisk_size_bytes": 1073741824,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/3786135d-49c7-46e2-831e-f0d0fd144f55",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-09ac5164-6bbd-4b80-bd12-d8f2c07dfec5",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "0d526b3b-c258-4b03-aadc-9e2d4237aa4b",
+      "name": "pvc-501b406e-147a-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: lb-controller-deployment-0, Namespace: kube-system, ServiceAccount: lb-controller-service-account",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "3dd9cd71-04f5-403f-9085-c1f2416db3a4",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 8192,
+          "vmdisk_size_bytes": 8589934592,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/3dd9cd71-04f5-403f-9085-c1f2416db3a4",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-0d526b3b-c258-4b03-aadc-9e2d4237aa4b",
+      "attachment_list": [
+        {
+          "client_uuid": "11fcda8d-9880-4381-a35d-13771ca68af0",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:e5d2ad0de3b"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "11cd933a-9ac4-4bf2-beb5-9cec52989073",
+      "name": "NTNX-ohtani02-696ff7a7-a1b2-4917-9280-0970feae0652-11cd933a-9ac4-4bf2-beb5-9cec52989073",
+      "logical_timestamp": 8,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "074f2e1a-9c94-47d6-a79b-0677060621a0",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/074f2e1a-9c94-47d6-a79b-0677060621a0"
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "517e86cd-d2bf-467d-bba6-11808b07d562",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/517e86cd-d2bf-467d-bba6-11808b07d562"
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "8e72965e-db06-4d7e-bd14-13b153267ec2",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/8e72965e-db06-4d7e-bd14-13b153267ec2"
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "0a20dffe-50e2-44c2-9f5f-5a96a272ff6a",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/0a20dffe-50e2-44c2-9f5f-5a96a272ff6a"
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "33dbfeb3-9d35-4b50-81e2-194f83689c00",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/33dbfeb3-9d35-4b50-81e2-194f83689c00"
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "0bb0e759-3bb2-4b9f-a1e4-2aa23b155912",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/0bb0e759-3bb2-4b9f-a1e4-2aa23b155912"
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "5e1031bc-d029-436d-bd96-f40158b26ff0",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/5e1031bc-d029-436d-bd96-f40158b26ff0"
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "04713614-24ed-45fb-aa83-adc9abd85e8e",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/04713614-24ed-45fb-aa83-adc9abd85e8e"
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "cf3a9d79-6cb9-469b-9075-3bd4696150f0",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/cf3a9d79-6cb9-469b-9075-3bd4696150f0"
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "c5a2cf3e-673e-4d89-a45f-f596603833f9",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/c5a2cf3e-673e-4d89-a45f-f596603833f9"
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "8cf3d12f-b94f-42ce-b0e6-e4dad2ee694b",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/8cf3d12f-b94f-42ce-b0e6-e4dad2ee694b"
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "21749d83-bf4d-440b-8993-80ba98e6d3b9",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/21749d83-bf4d-440b-8993-80ba98e6d3b9"
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "42b71444-cc9c-4d86-8222-e723e726b0e7",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/42b71444-cc9c-4d86-8222-e723e726b0e7"
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "1289c733-7a12-4b85-a5ff-c0e93aec071c",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/1289c733-7a12-4b85-a5ff-c0e93aec071c"
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "d161f5c3-41f8-42b3-aa2d-209b0ad3f4d3",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/d161f5c3-41f8-42b3-aa2d-209b0ad3f4d3"
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "444bae13-2340-4113-ac4d-20c0fdfb83c9",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/444bae13-2340-4113-ac4d-20c0fdfb83c9"
+        }
+      ],
+      "iscsi_target": "11cd933a-9ac4-4bf2-beb5-9cec52989073",
+      "attachment_list": [
+        {
+          "client_uuid": "7938f34c-68ee-4fc2-944f-28aa138be90d",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:af7ec122-2dab-42a3-8541-b807b2562d97"
+        },
+        {
+          "client_uuid": "bb84a366-870a-4612-8ebd-0ab02fd77398",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:d675d41b-b583-41b8-b29a-2869e4272e1f"
+        },
+        {
+          "client_uuid": "d4aa8152-1c8e-41da-8918-c8fa081260f2",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:174de53b-6d93-43bd-bf1b-c1bf6b6c1b8d"
+        }
+      ],
+      "is_shared": true
+    },
+    {
+      "uuid": "3656de95-5721-4fca-a749-74edddee9e41",
+      "name": "NTNX-fs01-25863c4f-8995-4a28-96d4-8cd28dc0cbf0-3656de95-5721-4fca-a749-74edddee9e41",
+      "logical_timestamp": 4,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "a378b23a-65b6-49b6-b269-8f0ed56648c9",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/a378b23a-65b6-49b6-b269-8f0ed56648c9"
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "e1184320-41a2-49c4-9ee2-eeefef2de28e",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/e1184320-41a2-49c4-9ee2-eeefef2de28e"
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "042ab071-f70b-40cd-a53c-200f7c833af3",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/042ab071-f70b-40cd-a53c-200f7c833af3"
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "f28ba0be-036c-4ba6-b358-64efbbfb2482",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/f28ba0be-036c-4ba6-b358-64efbbfb2482"
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "8710ac66-d010-4db4-9e80-62e880e2b81a",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/8710ac66-d010-4db4-9e80-62e880e2b81a"
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "f4aa62af-dbf7-4f96-85ff-015eaa94ddee",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/f4aa62af-dbf7-4f96-85ff-015eaa94ddee"
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "5aae3dfb-8f30-4ee6-ba92-77df96249765",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/5aae3dfb-8f30-4ee6-ba92-77df96249765"
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "b2813bcc-741e-4f13-a1aa-7c7d5bb050c1",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/b2813bcc-741e-4f13-a1aa-7c7d5bb050c1"
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "42fc8b61-30d2-4bb4-8175-33e89dcf4dad",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/42fc8b61-30d2-4bb4-8175-33e89dcf4dad"
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "6644a371-dccd-4880-8a45-95a0907d74c6",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/6644a371-dccd-4880-8a45-95a0907d74c6"
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "57c299f7-8646-4b14-b5f5-977d618f67ab",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/57c299f7-8646-4b14-b5f5-977d618f67ab"
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "79b77aa2-d937-42da-84c4-17143ff8a928",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/79b77aa2-d937-42da-84c4-17143ff8a928"
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "76bd6123-4813-4abb-acda-6d8ca72c2cb3",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/76bd6123-4813-4abb-acda-6d8ca72c2cb3"
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "d8b65744-040e-4b77-8443-edff07f351c9",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/d8b65744-040e-4b77-8443-edff07f351c9"
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "4c5374d3-8466-4c7a-b847-7b1961e03f79",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/4c5374d3-8466-4c7a-b847-7b1961e03f79"
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "0b4ac6de-8c04-4511-9efe-c06b6f35ae8a",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/0b4ac6de-8c04-4511-9efe-c06b6f35ae8a"
+        }
+      ],
+      "iscsi_target": "3656de95-5721-4fca-a749-74edddee9e41",
+      "attachment_list": [
+        {
+          "client_uuid": "4ca15cae-19d3-4c30-a3cf-b3840cfc658f",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:b70d8864-f465-419e-9a36-826cf9fa8831"
+        }
+      ],
+      "is_shared": true
+    },
+    {
+      "uuid": "38cbc670-0b36-4663-b79d-fde38c0bf849",
+      "name": "pvc-8dde0ae3-147a-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: prometheus-k8s-1, Namespace: ntnx-system, ServiceAccount: prometheus-k8s",
+      "logical_timestamp": 7,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "1dd58225-4519-4cda-989d-b21fd75ad034",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 30720,
+          "vmdisk_size_bytes": 32212254720,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/1dd58225-4519-4cda-989d-b21fd75ad034",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-38cbc670-0b36-4663-b79d-fde38c0bf849",
+      "attachment_list": [
+        {
+          "client_uuid": "11fcda8d-9880-4381-a35d-13771ca68af0",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:e5d2ad0de3b"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "3cbb0255-3757-4c1a-9a93-d8de6b389a73",
+      "name": "NTNX-ohtani02-696ff7a7-a1b2-4917-9280-0970feae0652-3cbb0255-3757-4c1a-9a93-d8de6b389a73",
+      "logical_timestamp": 8,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "cbd0b178-6cad-4f6b-aa90-9522f9b9fa86",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/cbd0b178-6cad-4f6b-aa90-9522f9b9fa86"
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "c0e3ae89-fd57-4eb8-acee-55d7dc5efb30",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/c0e3ae89-fd57-4eb8-acee-55d7dc5efb30"
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "c415457e-46b3-43b3-9a93-eeb6180e18f4",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/c415457e-46b3-43b3-9a93-eeb6180e18f4"
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "66ea93cd-99b0-470c-b863-ceb5867e011e",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/66ea93cd-99b0-470c-b863-ceb5867e011e"
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "ed9e87e6-b8ea-4925-9c7e-086800d1959c",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/ed9e87e6-b8ea-4925-9c7e-086800d1959c"
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "6c9ff992-173f-4e53-a59b-ac633dce93a8",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/6c9ff992-173f-4e53-a59b-ac633dce93a8"
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "f61b774d-732d-4a2f-b977-5d3feb969c91",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/f61b774d-732d-4a2f-b977-5d3feb969c91"
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "c7f2cfb5-2a35-4a7f-8c56-5da0a7982f30",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/c7f2cfb5-2a35-4a7f-8c56-5da0a7982f30"
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "e2b0a010-c2a2-4a7d-86fb-ad23e515cce0",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/e2b0a010-c2a2-4a7d-86fb-ad23e515cce0"
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "9fe8760e-0c2b-41bf-8636-a6025f02b64a",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/9fe8760e-0c2b-41bf-8636-a6025f02b64a"
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "29d561cc-cbdd-4419-ba40-1077ab0b7e12",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/29d561cc-cbdd-4419-ba40-1077ab0b7e12"
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "a692899c-2929-4482-b640-9bae8b808492",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/a692899c-2929-4482-b640-9bae8b808492"
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "39e28fbf-83f7-4a44-8570-7363c8828b5c",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/39e28fbf-83f7-4a44-8570-7363c8828b5c"
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "dd0b7997-f234-426e-95b7-85d57b3976a6",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/dd0b7997-f234-426e-95b7-85d57b3976a6"
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "30f758ae-b530-40de-a75d-82301fc9f7cc",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/30f758ae-b530-40de-a75d-82301fc9f7cc"
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "db89095a-76ff-4e45-ba58-983de7e282a5",
+          "container_id": 3090253,
+          "storage_container_id": 3090253,
+          "container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "storage_container_uuid": "c0dfc265-a1e1-4851-879d-b927774b9e68",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_ohtani02_ctr/.acropolis/vmdisk/db89095a-76ff-4e45-ba58-983de7e282a5"
+        }
+      ],
+      "iscsi_target": "3cbb0255-3757-4c1a-9a93-d8de6b389a73",
+      "attachment_list": [
+        {
+          "client_uuid": "7938f34c-68ee-4fc2-944f-28aa138be90d",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:af7ec122-2dab-42a3-8541-b807b2562d97"
+        },
+        {
+          "client_uuid": "bb84a366-870a-4612-8ebd-0ab02fd77398",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:d675d41b-b583-41b8-b29a-2869e4272e1f"
+        },
+        {
+          "client_uuid": "d4aa8152-1c8e-41da-8918-c8fa081260f2",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:174de53b-6d93-43bd-bf1b-c1bf6b6c1b8d"
+        }
+      ],
+      "is_shared": true
+    },
+    {
+      "uuid": "3e69b0b0-c7ba-43e5-a7d6-c8a2a738fa45",
+      "name": "pvc-e5dc108e-14f3-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: anc-ovn-0, Namespace: default, ServiceAccount: default",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "84716cc7-854a-41df-bd2f-24860dc3b6f4",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 8192,
+          "vmdisk_size_bytes": 8589934592,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/84716cc7-854a-41df-bd2f-24860dc3b6f4",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-3e69b0b0-c7ba-43e5-a7d6-c8a2a738fa45",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "4c6fc994-feee-4ecd-b837-6a9657afeb0d",
+      "name": "msp-aec25c93",
+      "logical_timestamp": 2,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "36322a4b-776f-43ff-ad06-be259653d412",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 15000,
+          "vmdisk_size_bytes": 15728640000,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/36322a4b-776f-43ff-ad06-be259653d412"
+        }
+      ],
+      "iscsi_target": "msp-aec25c93:nutanix-dvp-4c6fc994-feee-4ecd-b837-6a9657afeb0d",
+      "attachment_list": [
+        {
+          "client_uuid": "c3c9ec92-80b7-4b30-b115-42dbed2761d3",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:aec25c9335e8"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "4d48e1be-00b0-4b14-8d34-f8768813d981",
+      "name": "pvc-7580e250-147a-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: prometheus-k8s-0, Namespace: ntnx-system, ServiceAccount: prometheus-k8s",
+      "logical_timestamp": 7,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "13a124db-95bb-4029-9ee0-9884dc071f35",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 30720,
+          "vmdisk_size_bytes": 32212254720,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/13a124db-95bb-4029-9ee0-9884dc071f35",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-4d48e1be-00b0-4b14-8d34-f8768813d981",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "55032520-50da-4027-b7f8-d5b49474c828",
+      "name": "NTNX-test-fs01-f42d0c7c-bf25-4634-8334-70798a8cc389-55032520-50da-4027-b7f8-d5b49474c828",
+      "description": "",
+      "logical_timestamp": 1,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "ee025974-6499-4617-92e5-8aa84b3283db",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/ee025974-6499-4617-92e5-8aa84b3283db"
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "65db2941-b5ba-4797-8729-024ae44e6e70",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/65db2941-b5ba-4797-8729-024ae44e6e70"
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "e2f4aa0e-72df-46cd-97de-354831feac78",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/e2f4aa0e-72df-46cd-97de-354831feac78"
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "26c514a3-bae8-4d37-a9cd-2f4420ef8215",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/26c514a3-bae8-4d37-a9cd-2f4420ef8215"
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "40fb0cf9-6e92-4229-bd3e-b6302e73d29e",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/40fb0cf9-6e92-4229-bd3e-b6302e73d29e"
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "975a1ecb-dddc-4262-a783-6ba7c7fe7193",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/975a1ecb-dddc-4262-a783-6ba7c7fe7193"
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "a614becd-2c1d-4ca6-8fc8-28b27ebdca8a",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/a614becd-2c1d-4ca6-8fc8-28b27ebdca8a"
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "6d319707-5822-45a8-b74f-faf0fad24e0f",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/6d319707-5822-45a8-b74f-faf0fad24e0f"
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "d906f32e-19f6-4458-b380-6482b0378721",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/d906f32e-19f6-4458-b380-6482b0378721"
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "6d4fe2ef-c28c-4aed-91d7-df2009a54ea1",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/6d4fe2ef-c28c-4aed-91d7-df2009a54ea1"
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "1b824fb9-58e8-4afa-85f0-bb85ff0b618a",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/1b824fb9-58e8-4afa-85f0-bb85ff0b618a"
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "42380821-6afe-49ba-8367-e28564b470c8",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/42380821-6afe-49ba-8367-e28564b470c8"
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "a4e0ebb5-a8d6-4dab-bb7c-46903e8049b8",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/a4e0ebb5-a8d6-4dab-bb7c-46903e8049b8"
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "cac00f29-acc5-44c1-871b-7e14aabf9f9f",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/cac00f29-acc5-44c1-871b-7e14aabf9f9f"
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "0819f847-d032-4689-aca6-b402b92a0498",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/0819f847-d032-4689-aca6-b402b92a0498"
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "8d057f25-8e97-4de5-a0a9-72840ef39111",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/8d057f25-8e97-4de5-a0a9-72840ef39111"
+        },
+        {
+          "index": 16,
+          "vmdisk_uuid": "71d27a9f-fb89-44e9-8e60-3b9b25832903",
+          "container_id": 14951382,
+          "storage_container_id": 14951382,
+          "container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "storage_container_uuid": "3a2e469d-46d5-474b-be1d-8189632d1a0d",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_test-fs01_ctr/.acropolis/vmdisk/71d27a9f-fb89-44e9-8e60-3b9b25832903"
+        }
+      ],
+      "iscsi_target": "55032520-50da-4027-b7f8-d5b49474c828",
+      "is_shared": true
+    },
+    {
+      "uuid": "55e4bb97-50fe-47ae-b123-c084c3406dd7",
+      "name": "NTNX-fs01-79c2052a-bf6e-4297-b906-017a0d5a452f-55e4bb97-50fe-47ae-b123-c084c3406dd7",
+      "logical_timestamp": 2,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "7a91ada2-5c26-45fd-baa5-a271fb411a8c",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/7a91ada2-5c26-45fd-baa5-a271fb411a8c",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 1,
+          "vmdisk_uuid": "4dbcc6a7-6e29-4a4f-940e-85d405426284",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/4dbcc6a7-6e29-4a4f-940e-85d405426284",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 2,
+          "vmdisk_uuid": "103998eb-fb53-4d4c-ab2a-1cf7df1f1eae",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/103998eb-fb53-4d4c-ab2a-1cf7df1f1eae",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 3,
+          "vmdisk_uuid": "f4b6a5e3-fe3c-43b3-a0b2-644012890740",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/f4b6a5e3-fe3c-43b3-a0b2-644012890740",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 6,
+          "vmdisk_uuid": "6b61bc06-dbc4-453e-8bdc-122db4a62dc7",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/6b61bc06-dbc4-453e-8bdc-122db4a62dc7",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 7,
+          "vmdisk_uuid": "cdcabb54-9189-4b5d-a64b-4a380e86c0ff",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/cdcabb54-9189-4b5d-a64b-4a380e86c0ff",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 8,
+          "vmdisk_uuid": "57132199-7581-4d2b-948a-b7a89673fdd7",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/57132199-7581-4d2b-948a-b7a89673fdd7",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 9,
+          "vmdisk_uuid": "9280953f-55e8-42a5-8b79-520d08ce44a3",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/9280953f-55e8-42a5-8b79-520d08ce44a3",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 10,
+          "vmdisk_uuid": "0e76a23b-8312-4366-9396-1711368b633f",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/0e76a23b-8312-4366-9396-1711368b633f",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 11,
+          "vmdisk_uuid": "ff652038-4c41-414b-ab88-6246e57cca84",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/ff652038-4c41-414b-ab88-6246e57cca84",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 12,
+          "vmdisk_uuid": "80794bdf-4921-4c0d-92e6-40621b09c11b",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/80794bdf-4921-4c0d-92e6-40621b09c11b",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 13,
+          "vmdisk_uuid": "c34a9680-07bb-470b-a65e-6d80437ba2af",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/c34a9680-07bb-470b-a65e-6d80437ba2af",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 14,
+          "vmdisk_uuid": "f70e1d5d-82f1-4ec8-b8d5-1a0d5b1f2294",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/f70e1d5d-82f1-4ec8-b8d5-1a0d5b1f2294",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 15,
+          "vmdisk_uuid": "3e985136-816b-44a5-bd35-d5a94f933345",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/3e985136-816b-44a5-bd35-d5a94f933345",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 4,
+          "vmdisk_uuid": "803ea650-cfcb-4a6d-9cf8-047d23e9b481",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/803ea650-cfcb-4a6d-9cf8-047d23e9b481",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 5,
+          "vmdisk_uuid": "3ef689d2-eb44-4470-b209-203491709a94",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/3ef689d2-eb44-4470-b209-203491709a94",
+          "flash_mode_enabled": false
+        },
+        {
+          "index": 16,
+          "vmdisk_uuid": "23fc91a3-a826-4dc0-a49f-5f10c0d29590",
+          "container_id": 14973215,
+          "storage_container_id": 14973215,
+          "container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "storage_container_uuid": "daf1df98-0931-4f02-aac0-09299deaf6a9",
+          "vmdisk_size_mb": 209715200,
+          "vmdisk_size_bytes": 219902325555200,
+          "vmdisk_path": "/Nutanix_fs01_ctr/.acropolis/vmdisk/23fc91a3-a826-4dc0-a49f-5f10c0d29590",
+          "flash_mode_enabled": true
+        }
+      ],
+      "iscsi_target": "55e4bb97-50fe-47ae-b123-c084c3406dd7",
+      "attachment_list": [
+        {
+          "client_uuid": "4ca15cae-19d3-4c30-a3cf-b3840cfc658f",
+          "iscsi_initiator_name": "iqn.2010-06.com.nutanix:b70d8864-f465-419e-9a36-826cf9fa8831"
+        }
+      ],
+      "flash_mode_enabled": true,
+      "is_shared": true
+    },
+    {
+      "uuid": "58b7e849-9a26-4290-861c-bb5a145ddb05",
+      "name": "registry-c5741c78-5fbe-4326-7229-6f953cb52632",
+      "logical_timestamp": 4556,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "671934f7-955f-49c6-a57c-414afd03996e",
+          "container_id": 632,
+          "storage_container_id": 632,
+          "container_uuid": "b288bdfd-91e2-485f-aa07-f8806a1a1131",
+          "storage_container_uuid": "b288bdfd-91e2-485f-aa07-f8806a1a1131",
+          "vmdisk_size_mb": 102400,
+          "vmdisk_size_bytes": 107374182400,
+          "vmdisk_path": "/SelfServiceContainer/.acropolis/vmdisk/671934f7-955f-49c6-a57c-414afd03996e"
+        }
+      ],
+      "iscsi_target": "67fe291587c024a30f5dfa980cb2653ab94dc32d1fff5ba727fa6ab364c2ae77:nutanix-docker-volume-plugin",
+      "attachment_list": [
+        {
+          "client_uuid": "11fcda8d-9880-4381-a35d-13771ca68af0",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:e5d2ad0de3b"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "6546a841-c214-4d15-87a2-8e3103dc9536",
+      "name": "pvc-d4067246-147a-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: stolon-keeper-0, Namespace: ntnx-base, ServiceAccount: default",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "53cfaa8f-95a7-4a77-9a46-1c6aef3d4f70",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 1024,
+          "vmdisk_size_bytes": 1073741824,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/53cfaa8f-95a7-4a77-9a46-1c6aef3d4f70",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-6546a841-c214-4d15-87a2-8e3103dc9536",
+      "attachment_list": [
+        {
+          "client_uuid": "11fcda8d-9880-4381-a35d-13771ca68af0",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:e5d2ad0de3b"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "6fd2484b-76b4-4856-a0dd-86e6de70cf13",
+      "name": "cse-3be628-PC-POC20",
+      "logical_timestamp": 4,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "4d7ec028-b671-4c4a-b93a-5479a631358f",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 102400,
+          "vmdisk_size_bytes": 107374182400,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/4d7ec028-b671-4c4a-b93a-5479a631358f"
+        }
+      ],
+      "iscsi_target": "6e166cee985918b6de52da9cdbd3afcd9ca84839d771a2e91adcbe410efc57d7:nutanix-docker-volume-plugin",
+      "attachment_list": [
+        {
+          "client_uuid": "8fcc7d4e-2273-404a-bfc5-439c0072ebd7",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:ae77d54ebede"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "6d03d547-8f1c-412c-bd47-e614f3248ff9",
+      "name": "poc20-c5741c-pc-01",
+      "logical_timestamp": 18,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "7bbd81c9-6b1a-4043-85ee-3d517b131849",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 102400,
+          "vmdisk_size_bytes": 107374182400,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/7bbd81c9-6b1a-4043-85ee-3d517b131849"
+        }
+      ],
+      "iscsi_target": "a36400b58b48893da8833ecb32c2801116aa337a3c93fa33232217f36bab2d87:nutanix-docker-volume-plugin",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "857af894-af9c-4cd5-b280-efb29ccea464",
+      "name": "pvc-e5deea17-14f3-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: anc-ovn-0, Namespace: default, ServiceAccount: default",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "f6666f18-44db-4f8a-837d-0f1ee740588c",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 1024,
+          "vmdisk_size_bytes": 1073741824,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/f6666f18-44db-4f8a-837d-0f1ee740588c",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-857af894-af9c-4cd5-b280-efb29ccea464",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "8c615cb3-6629-4cd2-965e-b6dfe24a8adf",
+      "name": "pvc-f1202335-0a1d-11ec-aee6-506b8df5e86b",
+      "description": "Pod: stolon-keeper-0, Namespace: ntnx-base, ServiceAccount: default",
+      "logical_timestamp": 3,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "8bfeee35-98f2-4893-8a89-1b166ccef776",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 1024,
+          "vmdisk_size_bytes": 1073741824,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/8bfeee35-98f2-4893-8a89-1b166ccef776",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-8c615cb3-6629-4cd2-965e-b6dfe24a8adf",
+      "attachment_list": [
+        {
+          "client_uuid": "8fcc7d4e-2273-404a-bfc5-439c0072ebd7",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:ae77d54ebede"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "953290ed-acb3-4ae6-a1f4-fbce7efb7c2c",
+      "name": "poc20-c5741c-pc-02",
+      "logical_timestamp": 10,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "bd78d3ed-8d34-484c-afd5-e859a84500dc",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 102400,
+          "vmdisk_size_bytes": 107374182400,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/bd78d3ed-8d34-484c-afd5-e859a84500dc"
+        }
+      ],
+      "iscsi_target": "c7d90f51778af952ccf3570382eb123c9acb57f7be811e2305422a86a87c8cbb:nutanix-docker-volume-plugin",
+      "attachment_list": [
+        {
+          "client_uuid": "2f4a536b-c4ce-4359-a7b4-d9fa6e4ef10b",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:477e846db6f6"
+        }
+      ],
+      "is_shared": false
+    },
+    {
+      "uuid": "ae719c54-1435-4ad8-be8f-3fa96833aff8",
+      "name": "pvc-0eeaddf1-14f4-11ec-b9f8-506b8dbc13c2",
+      "description": "Pod: anc-mysql-0, Namespace: default, ServiceAccount: default",
+      "logical_timestamp": 9,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "cd6d71a1-932f-43c3-b2e3-b27596c45963",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 8192,
+          "vmdisk_size_bytes": 8589934592,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/cd6d71a1-932f-43c3-b2e3-b27596c45963",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-ae719c54-1435-4ad8-be8f-3fa96833aff8",
+      "attachment_list": [
+        {
+          "client_uuid": "03d609bb-da9a-463b-81ea-b113f204637d",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:bbb1ef5f1ee1"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "b757d29b-9b83-4e23-84a8-7231825838cf",
+      "name": "VG01",
+      "description": "",
+      "logical_timestamp": 1,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "d993c1ce-0690-4de7-a921-c391fc076fd4",
+          "container_id": 12,
+          "storage_container_id": 12,
+          "container_uuid": "0f887a94-6051-4996-8759-48f62188c175",
+          "storage_container_uuid": "0f887a94-6051-4996-8759-48f62188c175",
+          "vmdisk_size_mb": 10240,
+          "vmdisk_size_bytes": 10737418240,
+          "vmdisk_path": "/default-container-90129684887843/.acropolis/vmdisk/d993c1ce-0690-4de7-a921-c391fc076fd4",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "vg01-b757d29b-9b83-4e23-84a8-7231825838cf",
+      "flash_mode_enabled": false,
+      "is_shared": true
+    },
+    {
+      "uuid": "ca118811-c870-4796-bd73-5cbba2c6362a",
+      "name": "pvc-f122f4ad-0a1d-11ec-aee6-506b8df5e86b",
+      "description": "Pod: stolon-keeper-1, Namespace: ntnx-base, ServiceAccount: default",
+      "logical_timestamp": 3,
+      "disk_list": [
+        {
+          "index": 0,
+          "vmdisk_uuid": "090ec4c3-9a4d-4239-91f2-537888091b3a",
+          "container_id": 13,
+          "storage_container_id": 13,
+          "container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "storage_container_uuid": "f33a78a0-abc5-4458-9f0b-6e29d3267b32",
+          "vmdisk_size_mb": 1024,
+          "vmdisk_size_bytes": 1073741824,
+          "vmdisk_path": "/NutanixManagementShare/.acropolis/vmdisk/090ec4c3-9a4d-4239-91f2-537888091b3a",
+          "flash_mode_enabled": false
+        }
+      ],
+      "iscsi_target": "ntnx-k8s-ca118811-c870-4796-bd73-5cbba2c6362a",
+      "attachment_list": [
+        {
+          "client_uuid": "8fcc7d4e-2273-404a-bfc5-439c0072ebd7",
+          "iscsi_initiator_name": "iqn.1994-05.com.redhat:ae77d54ebede"
+        }
+      ],
+      "flash_mode_enabled": false,
+      "is_shared": true
+    }
+  ]
+}

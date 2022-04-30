@@ -1,13 +1,29 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
+import { SubmitHandler, useForm } from 'react-hook-form'
 
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
+
+type FormValues = {
+  prism_ip: string
+  prism_user: string
+  prism_pass: string
+}
+
 const Index: NextPage = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormValues>()
+
+  const onConnect: SubmitHandler<FormValues> = data => console.log(data)
+
   return (
     <div className="">
       <Head>
@@ -23,12 +39,13 @@ const Index: NextPage = () => {
 
         <div className="w-1/2 bg-primary h-screen flex justify-center items-center flex flex-col">
           <div className="form-control mt-20">
-            <form >
+            <form onSubmit={handleSubmit(onConnect)}>
               <div className='flex flex-col'>
-                <input type="text" placeholder="Cluster IP" className="input input-info input-bordered m-1 w-64 text-lg" />
-                <input type="text" placeholder="username" className="input input-info input-bordered m-1 w-64 text-lg" />
+                <input {...register("prism_ip", {required: true})} type="text" placeholder="Cluster IP" className="input input-info input-bordered m-1 w-64 text-lg" />
+                {errors.prism_ip && <p className='text-red-600'>required.</p>}
+                <input {...register('prism_user')} type="text" placeholder="username" className="input input-info input-bordered m-1 w-64 text-lg" />
                 <div className='m-1 relative'>
-                  <input type="password" placeholder="Password" className="input input-info input-bordered w-64 text-lg" />
+                  <input {...register('prism_pass')} type="password" placeholder="Password" className="input input-info input-bordered w-64 text-lg" />
                   <button type="submit" className="absolute inset-y-2 right-2 opacity-20 hover:opacity-100"><FontAwesomeIcon icon={faArrowCircleRight} size="2x" /></button>
                 </div>
               </div>

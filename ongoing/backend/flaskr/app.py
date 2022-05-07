@@ -75,6 +75,11 @@ def latestdataset():
     print(data)
     return make_response(jsonify(data))
 
+@app.route('/api/fetchtest')
+def fetchtest():
+    return make_response(jsonify('Fetch Success'))
+
+
 if __name__  == '__main__':
     app.run(host="0.0.0.0", port=7777, debug=True)
 

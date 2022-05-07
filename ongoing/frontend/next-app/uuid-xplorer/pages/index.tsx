@@ -22,7 +22,13 @@ const Index: NextPage = () => {
     formState: { errors },
   } = useForm<FormValues>()
 
-  const onConnect: SubmitHandler<FormValues> = data => console.log(data)
+  const onConnect: SubmitHandler<FormValues> = async data => {
+    const response = await fetch('http://backend:7777/api/fetchtest')
+    if(response.status === 200) {
+      const res_json = await response.json()
+      console.log(res_json)
+    }
+  }
 
   return (
     <div className="">

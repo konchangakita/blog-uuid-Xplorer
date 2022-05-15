@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import router from 'next/router'
 
 import { SubmitHandler, useForm } from 'react-hook-form'
 
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
-
 
 type FormValues = {
   prism_ip: string
@@ -24,10 +24,26 @@ const Index: NextPage = () => {
 
   const onConnect: SubmitHandler<FormValues> = async data => {
     console.log(data)
-    const response = await fetch('/api/connect')
+    const requestOptions = {
+      method: "POST",
+      headers: {'Content-Type' : 'application/json'},
+      body: JSON.stringify(data)
+    }
+
+    const response = await fetch('/api/connect', requestOptions)
     if(response.status === 200) {
       const res_json = await response.json()
       console.log(res_json)
+      if(res_json.info === 'success') {
+        console.log(res_json)
+        router.push({
+          pathname: '/home',
+          query: {
+            cluster: res_json.cluster_name,
+            user: data.prism_user
+          }
+        })
+      } else { alert('login failed') }
     }
   }
 
@@ -50,9 +66,10 @@ const Index: NextPage = () => {
               <div className='flex flex-col'>
                 <input {...register("prism_ip", {required: true})} type="text" placeholder="Cluster IP" className="input input-info input-bordered m-1 w-64 text-lg" />
                 {errors.prism_ip && <p className='text-red-600'>required.</p>}
-                <input {...register('prism_user')} type="text" placeholder="username" className="input input-info input-bordered m-1 w-64 text-lg" />
+                <input {...register('prism_user', {required: true})} type="text" placeholder="username" className="input input-info input-bordered m-1 w-64 text-lg" />
+                {errors.prism_user && <p className='text-red-600'>required.</p>}
                 <div className='m-1 relative'>
-                  <input {...register('prism_pass')} type="password" placeholder="Password" className="input input-info input-bordered w-64 text-lg" />
+                  <input {...register('prism_pass', {required: true})} type="password" placeholder="Password" className="input input-info input-bordered w-64 text-lg" />
                   <button type="submit" className="absolute inset-y-2 right-2 opacity-20 hover:opacity-100"><FontAwesomeIcon icon={faArrowCircleRight} size="2x" /></button>
                 </div>
               </div>

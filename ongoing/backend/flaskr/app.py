@@ -30,7 +30,7 @@ def connect_cluster(request_form):
             # input to Elasticsearch
             cluster_name, input_size = es.input_data(res_list)
             time.sleep(1)
-            info = "データ取得完了"
+            info = "success"
         else:
             r_json = res_list['vms'].json()
             info = r_json['message_list'][0]['message']

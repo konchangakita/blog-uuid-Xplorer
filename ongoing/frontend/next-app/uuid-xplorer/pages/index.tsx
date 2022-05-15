@@ -40,7 +40,6 @@ const Index: NextPage = () => {
           pathname: '/home',
           query: {
             cluster: res_json.cluster_name,
-            user: data.prism_user
           }
         })
       } else { alert('login failed') }

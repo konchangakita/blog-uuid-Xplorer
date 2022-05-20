@@ -16,6 +16,10 @@ frontendコンテナに接続し
 `cd /usr/src/next-app/uuid-xplorer`  
 `npm run dev`  
   
+backendコンテナに接続し  
+`cd /usr/src/flaskr
+`python app.py
+  
 ブラウザからアクセス  
 `http://localhost:7778/`  
   

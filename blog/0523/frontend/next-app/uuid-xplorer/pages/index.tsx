@@ -39,7 +39,7 @@ const Index: NextPage = () => {
         router.push({
           pathname: '/home',
           query: {
-            cluster_name: res_json.cluster_name,
+            cluster: res_json.cluster_name,
           }
         })
       } else { alert('login failed') }

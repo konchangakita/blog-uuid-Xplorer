@@ -20,6 +20,11 @@ module.exports = {
         'base-content': '#1f2937',
         'info': '#2094f3',
 
+        'neutral': '#3d4451',
+        'neutral-focus': '#2a2e37',
+        'neutral-content': '#ffffff',
+
+
         },
       },
     ],

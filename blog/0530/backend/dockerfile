@@ -1,0 +1,16 @@
+FROM python:3.10.4-slim
+
+RUN apt update -y
+RUN apt install -y curl
+RUN pip install -U pip
+RUN pip install flask
+RUN pip install jupyterlab
+RUN pip install elasticsearch
+RUN pip install paramiko
+
+#RUN apt install -y netcat
+WORKDIR /usr/src
+
+#USER 1000
+# execute jpyterlab
+CMD ["tail", "-f", "/dev/null"]
